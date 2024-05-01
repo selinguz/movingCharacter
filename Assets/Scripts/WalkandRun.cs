@@ -33,7 +33,7 @@ public class WalkandRun : MonoBehaviour
         if (Input.GetKey(KeyCode.R))
         {
             animator.SetBool("isRunning", true);
-            transform.Translate(new Vector3(0, 0, 4f)*Time.deltaTime);
+            transform.Translate(new Vector3(2f, 0, 4f)*Time.deltaTime);
         
         }
         else
@@ -44,14 +44,14 @@ public class WalkandRun : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             animator.SetBool("isWalking", true);
-            transform.Translate(new Vector3(2f, 0, 4f) * Time.deltaTime);
+            transform.Translate(new Vector3(-2f, 0, 4f) * Time.deltaTime);
 
         }
 
         if (Input.GetKey(KeyCode.D))
         {
             animator.SetBool("isWalking", true);
-            transform.Translate(new Vector3(-2f, 0, 4f) * Time.deltaTime);
+            transform.Translate(new Vector3(2f, 0, 4f) * Time.deltaTime);
           
 
         }
